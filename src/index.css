@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+.dark { color-scheme: dark; }
+
+@media print { .no-print { display: none !important; } }
+
+@keyframes floatGlow {
+  0% { transform: translate(-50%,-40%) rotate(0deg); }
+  50% { transform: translate(-48%,-42%) rotate(10deg); }
+  100% { transform: translate(-50%,-40%) rotate(0deg); }
+}
+.bg-orb { animation: floatGlow 18s ease-in-out infinite; }
